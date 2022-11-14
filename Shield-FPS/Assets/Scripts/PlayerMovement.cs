@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 inputVector;
     private Vector3 movementVector;
 
+    public Animator camAnim;
+    private bool isWalking;
+
     private float gravity = -10;
 
     void Start()
@@ -17,11 +20,13 @@ public class PlayerMovement : MonoBehaviour
         playerController = GetComponent<CharacterController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         PlayerInput();
         MovePlayer();
+        CheckForWalk();
+
+        camAnim.SetBool("isWalking", isWalking);
     }
     void PlayerInput()
     {
@@ -35,5 +40,17 @@ public class PlayerMovement : MonoBehaviour
     {
         playerController.Move(movementVector * Time.deltaTime);
     }
-    
+    void CheckForWalk()
+    {
+        if(playerController.velocity.magnitude > 0.1f)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
+    }
+
+
 }
