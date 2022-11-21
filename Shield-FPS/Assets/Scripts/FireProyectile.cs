@@ -9,18 +9,21 @@ public class FireProyectile : MonoBehaviour
 
     public GameObject proyectilePrefab;
 
-    private bool isShooting;
+    private bool canShoot;
 
-    void Update()
+    private void Start()
     {
-        
+        StartCoroutine(ShootPrefab());
     }
-    void ShootArrow()
+    IEnumerator ShootPrefab()
     {
-        if (isShooting)
+        canShoot = true;
+        yield return new WaitForSeconds(5);
+        if(canShoot == true)
         {
-          Instantiate(proyectilePrefab, shootingPoint.position, shootingPoint.rotation);
-        }  
+            Instantiate(proyectilePrefab, shootingPoint.position, shootingPoint.rotation);
+        }
+        canShoot = false;
     }
 
 }
