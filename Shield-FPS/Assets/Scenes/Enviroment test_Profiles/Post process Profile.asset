@@ -78,7 +78,7 @@ MonoBehaviour:
     value: 1
   gradingMode:
     overrideState: 1
-    value: 1
+    value: 0
   externalLut:
     overrideState: 0
     value: {fileID: 0}
@@ -1389,13 +1389,13 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 8.13
+    value: 1.77
   threshold:
     overrideState: 1
-    value: 0.78
+    value: 0.38
   softKnee:
     overrideState: 1
-    value: 0.584
+    value: 0.5
   clamp:
     overrideState: 1
     value: 65472
