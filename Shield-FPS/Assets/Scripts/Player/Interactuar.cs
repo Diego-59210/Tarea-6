@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Interactuar : MonoBehaviour
 {
+    public GameObject DestructObject;
+    private GameObject Componente;
+
+    public BoxCollider MiCollider;
+
     AudioSource RejaSonido;
     Animator anim;
     Transform tr;
@@ -22,6 +27,7 @@ public class Interactuar : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             anim.SetBool("AbrirReja", true);
+            
         }
 
         if (Input.GetKeyUp(KeyCode.E))
@@ -31,6 +37,8 @@ public class Interactuar : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             anim.SetBool("Interactuar", true);
+            Destroy(DestructObject, 0);
+            MiCollider.enabled = false;
         }
 
         if (Input.GetKeyUp(KeyCode.E))
