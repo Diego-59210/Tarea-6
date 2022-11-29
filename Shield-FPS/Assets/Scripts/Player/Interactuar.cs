@@ -7,7 +7,7 @@ public class Interactuar : MonoBehaviour
     public GameObject DestructObject;
     private GameObject Componente;
 
-    public BoxCollider MiCollider;
+    public Canvas DestruirCanvas;
 
     AudioSource RejaSonido;
     Animator anim;
@@ -27,7 +27,6 @@ public class Interactuar : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             anim.SetBool("AbrirReja", true);
-            
         }
 
         if (Input.GetKeyUp(KeyCode.E))
@@ -36,9 +35,18 @@ public class Interactuar : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
+            anim.SetBool("CerrarReja", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            anim.SetBool("CerrarReja", false);
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
             anim.SetBool("Interactuar", true);
             Destroy(DestructObject, 0);
-            MiCollider.enabled = false;
+            DestruirCanvas.enabled = false;
         }
 
         if (Input.GetKeyUp(KeyCode.E))
