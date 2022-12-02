@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 inputVector;
     private Vector3 movementVector;
 
-    public Animator camAnim;
+    //public Animator camAnim;
     private bool isWalking;
 
     private float gravity = -10;
@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         PlayerInput();
         MovePlayer();  
 
-        camAnim.SetBool("isWalking", isWalking);
+        //camAnim.SetBool("isWalking", isWalking);
     }
     void PlayerInput()
     {
