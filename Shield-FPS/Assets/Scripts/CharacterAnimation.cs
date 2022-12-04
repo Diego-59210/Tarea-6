@@ -30,6 +30,25 @@ public class CharacterAnimation : MonoBehaviour
     {
         anim.SetBool("Blocking", false);
     }
+    public void Death()
+    {
+        anim.SetTrigger("Death");
+    }
+
+    //Enemy Animations
+
+    public void EnemyWalk(bool move)
+    {
+        anim.SetBool("Walking", move);
+    }
+    public void EnemyAttack()
+    {
+        anim.SetTrigger("Attack");
+    }
+    public void EnemyHit()
+    {
+        anim.SetTrigger("Hit");
+    }
 
 
 }
