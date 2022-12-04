@@ -5,20 +5,24 @@ using UnityEngine.UI;
 
 public class HealthUI : MonoBehaviour
 {
-    private Image healthUI;
+    public Image bloodScreen;
+    Color alphaColor;
+
     // Start is called before the first frame update
     void Awake()
     {
-        healthUI = GameObject.FindWithTag("UI").GetComponent<Image>();
+        alphaColor = bloodScreen.color;
     }
 
     public void DisplayHealth(float value)
     {
         value /= 100f;
+
         if (value < 0f)
         {
             value = 0f;
         }
-        healthUI.fillAmount = value;
+        alphaColor.a += .25f;
+        bloodScreen.color = alphaColor;
     }
 }

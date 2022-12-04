@@ -24,7 +24,10 @@ public class HealthScript : MonoBehaviour
         }
         
     }
-
+    private void Update()
+    {
+        HealthTest();
+    }
     public void ApplyDamage(float damage)
     {
         if (characterDied)
@@ -62,6 +65,13 @@ public class HealthScript : MonoBehaviour
             animationScript.EnemyHit();
         }
         
+    }
+    public void HealthTest()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            ApplyDamage(20);
+        }
     }
     
 }
