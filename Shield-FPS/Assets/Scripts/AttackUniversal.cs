@@ -10,7 +10,6 @@ public class AttackUniversal : MonoBehaviour
     public float damage = 2f;
 
     public bool isPlayer, isEnemy;
-    public GameObject hitFXPrefab;
     
     void Update()
     {
@@ -23,19 +22,7 @@ public class AttackUniversal : MonoBehaviour
         {
             if(isPlayer)
             {
-                hit[0].GetComponent<HealthScript>().ApplyDamage(damage);
-                Vector3 hitFXPosition = hit[0].transform.position;
-                hitFXPosition.y += 0.5f;
-                if (hit[0].transform.forward.x > 0)
-                {
-                hitFXPosition.x += 0.3f;
-                }
-                else if (hit[0].transform.forward.x < 0)
-                {
-                hitFXPosition.x -= 0.3f;
-                }
-                Instantiate(hitFXPrefab, hitFXPosition, Quaternion.identity);
-                
+                hit[0].GetComponent<HealthScript>().ApplyDamage(damage);   
             }
             if(isEnemy)
             {
