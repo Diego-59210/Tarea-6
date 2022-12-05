@@ -7,8 +7,6 @@ public class Interactuar : MonoBehaviour
     public GameObject DestructObject;
     private GameObject Componente;
 
-    public Canvas DestruirCanvas;
-
     AudioSource RejaSonido;
     Animator anim;
     Transform tr;
@@ -46,7 +44,6 @@ public class Interactuar : MonoBehaviour
         {
             anim.SetBool("Interactuar", true);
             Destroy(DestructObject, 0);
-            DestruirCanvas.enabled = false;
         }
 
         if (Input.GetKeyUp(KeyCode.E))
