@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 movementVector;
 
     //public Animator camAnim;
-    private bool isWalking;
+    //private bool isWalking;
 
     private float gravity = -10;
 
@@ -36,13 +36,13 @@ public class PlayerMovement : MonoBehaviour
             inputVector.Normalize();
             inputVector = transform.TransformDirection(inputVector);
 
-            isWalking = true;
+            //isWalking = true;
         }
         else
         {
             inputVector = Vector3.Lerp(inputVector, Vector3.zero, momentumDamping * Time.deltaTime);
 
-            isWalking = false;
+            //isWalking = false;
         }
 
         movementVector = (inputVector * playerSpeed) + (Vector3.up * gravity);

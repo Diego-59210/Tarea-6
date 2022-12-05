@@ -22,7 +22,8 @@ public class AttackUniversal : MonoBehaviour
         {
             if(isPlayer)
             {
-                hit[0].GetComponent<HealthScript>().ApplyDamage(damage);   
+                hit[0].GetComponent<HealthScript>().ApplyDamage(damage);
+ 
             }
             if(isEnemy)
             {
