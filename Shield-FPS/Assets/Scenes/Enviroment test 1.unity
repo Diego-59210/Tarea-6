@@ -734,7 +734,7 @@ MonoBehaviour:
   m_NoiseProfile: {fileID: 11400000, guid: e9ce97b7a206dc64d90931ea044e0c72, type: 2}
   m_PivotOffset: {x: 0, y: 0, z: 0}
   m_AmplitudeGain: 1
-  m_FrequencyGain: 0.07160442
+  m_FrequencyGain: 0.06
   mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!23 &45206240 stripped
 MeshRenderer:
