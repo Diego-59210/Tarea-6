@@ -16,7 +16,7 @@ public class PlayerAttack : MonoBehaviour
 
     private bool activateTimerToReset;
 
-    private float default_Combo_Timer = 0.8f;
+    public float default_Combo_Timer = 0.8f;
     private float current_Combo_Timer;
 
     private ComboState current_Combo_State;

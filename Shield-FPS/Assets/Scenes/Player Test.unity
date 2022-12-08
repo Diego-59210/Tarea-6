@@ -1407,6 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00c7a51061e653b458c99d678c602def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  default_Combo_Timer: 1
 --- !u!114 &2135172149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1441,18 +1442,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 505527685423499155, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
-      propertyPath: m_Height
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 505527685423499155, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
-      propertyPath: m_Center.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4916496008919201215, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.67
-      objectReference: {fileID: 0}
     - target: {fileID: 5986745264177969488, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
       propertyPath: m_Name
       value: Enemy 1 - Parent
