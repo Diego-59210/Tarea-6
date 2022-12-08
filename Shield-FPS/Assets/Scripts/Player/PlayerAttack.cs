@@ -6,7 +6,7 @@ public enum ComboState
     NONE,
     ATTACK_1,
     ATTACK_2,
-    ATTACK_3
+    //ATTACK_3
 }
 
 
@@ -41,7 +41,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            if (current_Combo_State == ComboState.ATTACK_3)
+            if (current_Combo_State == ComboState.ATTACK_2) //Change this
 
                 return;
 
@@ -56,10 +56,10 @@ public class PlayerAttack : MonoBehaviour
             {
                 player_Anim.PlayerAttack2();
             }
-            if (current_Combo_State == ComboState.ATTACK_3)
-            {
-                player_Anim.PlayerAttack3();
-            }
+            //if (current_Combo_State == ComboState.ATTACK_3)
+            //{
+            //   player_Anim.PlayerAttack3();
+            //}
         }
     }
     void Blocking()
