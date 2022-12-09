@@ -5,7 +5,7 @@ public enum ComboState
 {
     NONE,
     ATTACK_1,
-    ATTACK_2,
+    ATTACK_2
     //ATTACK_3
 }
 
