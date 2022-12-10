@@ -90,7 +90,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: -2.686, y: 0.78, z: 12.718}
+        value: {x: -2.523, y: 0.948, z: 12.718}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -108,9 +108,9 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 9
-        value: {x: -2.686, y: 0.78, z: 12.718}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
+        value: {x: -2.591, y: 0.958, z: 12.718}
+        inSlope: {x: 0.09350002, y: 0.11975001, z: 0}
+        outSlope: {x: 0.09350002, y: 0.11975001, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -303,7 +303,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -2.686
+        value: -2.523
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -321,9 +321,9 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 9
-        value: -2.686
-        inSlope: 0
-        outSlope: 0
+        value: -2.591
+        inSlope: 0.09350002
+        outSlope: 0.09350002
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -367,7 +367,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.78
+        value: 0.948
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -385,9 +385,9 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 9
-        value: 0.78
-        inSlope: 0
-        outSlope: 0
+        value: 0.958
+        inSlope: 0.11975001
+        outSlope: 0.11975001
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -839,6 +839,27 @@ AnimationClip:
     functionName: PlayFx
     data: 
     objectReferenceParameter: {fileID: 8300000, guid: c90373d547f35254bb4673add70264b4, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 4.0333333
+    functionName: PlayFx
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 0d4fd9846e1cf0e459ae286f04050185, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 9
+    functionName: PlayFx
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 641fd66d4be2be846a6a5799fd5fb3ec, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 11.5
+    functionName: PlayFx
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 317fc79d115e0ce42902261532c98dc9, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
