@@ -61,7 +61,7 @@ public class CharacterAnimationDelegate : MonoBehaviour
     }
     void CharacterDeath()
     {
-        Invoke("DeactivateGameObject", 2f);
+        Invoke("DeactivateGameObject", 1f);
     }
     void DeactivateGameObject()
     {

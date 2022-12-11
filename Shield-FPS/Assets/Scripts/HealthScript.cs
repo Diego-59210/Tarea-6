@@ -10,7 +10,7 @@ public class HealthScript : MonoBehaviour
 
     private bool characterDied;
 
-    public bool isPlayer;
+    public bool isPlayer, isEnemy;
 
     private HealthUI healthUI;
 
@@ -21,6 +21,10 @@ public class HealthScript : MonoBehaviour
         if (isPlayer)
         {
             //healthUI = GetComponent<HealthUI>();
+        }
+        if(isEnemy)
+        {
+            enemyMovement = GetComponent<EnemyMovement>();
         }
         
     }
@@ -42,7 +46,7 @@ public class HealthScript : MonoBehaviour
             animationScript.Death();
             characterDied = true;
 
-            if(!isPlayer)
+            if(isEnemy)
             {
                 enemyMovement.enabled = false;
                 transform.gameObject.layer = 0;
