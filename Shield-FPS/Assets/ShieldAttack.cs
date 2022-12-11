@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockAndAbsorb : MonoBehaviour
+public class ShieldAttack : MonoBehaviour
 {
     public LayerMask collisionLayer;
     public float radius = 1f;
-    public float energy = 5f;
+    public float damage = 2f;
+
 
     void Update()
     {
@@ -17,8 +18,8 @@ public class BlockAndAbsorb : MonoBehaviour
         Collider[] hit = Physics.OverlapSphere(transform.position, radius, collisionLayer);
         if (hit.Length > 0)
         {
-            hit[0].GetComponentInParent<CharacterAnimation>().BlockedAttack();
-            energy++;
+            hit[0].GetComponent<HealthScript>().ApplyDamage(damage);
+            gameObject.SetActive(false);
         }
     }
     private void OnDrawGizmos()

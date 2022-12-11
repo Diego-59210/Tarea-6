@@ -9,7 +9,6 @@ public class AttackUniversal : MonoBehaviour
     public float radius = 1f;
     public float damage = 2f;
 
-    public bool isPlayer, isEnemy;
     
     void Update()
     {
@@ -20,17 +19,8 @@ public class AttackUniversal : MonoBehaviour
         Collider[] hit = Physics.OverlapSphere(transform.position, radius, collisionLayer);
         if(hit.Length > 0)
         {
-            if(isPlayer)
-            {
-                hit[0].GetComponent<HealthScript>().ApplyDamage(damage);
- 
-            }
-            if(isEnemy)
-            {
-                
-                hit[0].GetComponent<HealthScript>().ApplyDamage(damage);
-                
-            }
+            hit[0].GetComponentInParent<CharacterAnimation>().BlockedAttack();
+            //hit[0].GetComponent<HealthScript>().ApplyDamage(damage);                         
             gameObject.SetActive(false);
         }
     }

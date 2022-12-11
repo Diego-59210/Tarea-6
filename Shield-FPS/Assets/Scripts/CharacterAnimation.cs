@@ -30,6 +30,11 @@ public class CharacterAnimation : MonoBehaviour
     {
         anim.SetBool("Blocking", false);
     }
+    public void BlockedAttack()
+    {
+        anim.SetTrigger("Blocked");
+    }
+
     public void Death()
     {
         anim.SetTrigger("Death");

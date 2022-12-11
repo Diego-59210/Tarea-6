@@ -18,12 +18,14 @@ public class PlayerAttack : MonoBehaviour
 
     public float default_Combo_Timer = 0.8f;
     private float current_Combo_Timer;
+    public GameObject blockingPoint;
 
     private ComboState current_Combo_State;
 
     void Awake()
     {
         player_Anim = GetComponentInChildren<CharacterAnimation>();
+        
     }
     void Start()
     {
@@ -67,10 +69,16 @@ public class PlayerAttack : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse1))
         {
             player_Anim.ShieldBlockON();
+            blockingPoint.SetActive(true);
         }
         else if (Input.GetKeyUp(KeyCode.Mouse1))
         {
             player_Anim.ShieldBlockOFF();
+            if (blockingPoint.activeInHierarchy)
+            {
+                blockingPoint.SetActive(false);
+            }
+
         }
     }
     void ResetComboState()

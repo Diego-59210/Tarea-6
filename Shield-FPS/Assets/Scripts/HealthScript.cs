@@ -20,13 +20,9 @@ public class HealthScript : MonoBehaviour
        
         if (isPlayer)
         {
-            healthUI = GetComponent<HealthUI>();
+            //healthUI = GetComponent<HealthUI>();
         }
         
-    }
-    private void Update()
-    {
-        HealthTest();
     }
     public void ApplyDamage(float damage)
     {
@@ -38,7 +34,7 @@ public class HealthScript : MonoBehaviour
         if(isPlayer)
         {
             //animationScript.PlayerHurt();
-            healthUI.DisplayHealth(health);
+            //healthUI.DisplayHealth(health);
         }
 
         if(health <= 0f)
@@ -65,13 +61,5 @@ public class HealthScript : MonoBehaviour
             animationScript.EnemyHit();
         }
         
-    }
-    public void HealthTest()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            ApplyDamage(20);
-        }
-    }
-    
+    }  
 }
