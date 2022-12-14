@@ -41,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: atras
+    uniqueID: 2687565135
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
