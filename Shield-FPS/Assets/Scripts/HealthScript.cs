@@ -10,7 +10,7 @@ public class HealthScript : MonoBehaviour
 
     private bool characterDied;
 
-    public bool isPlayer, isEnemy;
+    public bool isPlayer, isEnemy, isWall;
 
     private HealthUI healthUI;
 
@@ -38,10 +38,14 @@ public class HealthScript : MonoBehaviour
         if(isPlayer)
         {
             //animationScript.PlayerHurt();
-            //healthUI.DisplayHealth(health);
+            healthUI.DisplayHealth(health);
+        }
+        if (isWall)
+        {
+            Debug.Log("Wall Hit");
         }
 
-        if(health <= 0f)
+        if (health <= 0f)
         {
             animationScript.Death();
             characterDied = true;
@@ -60,7 +64,7 @@ public class HealthScript : MonoBehaviour
             
         }
         
-        if (!isPlayer)
+        if (isEnemy)
         {
             animationScript.EnemyHit();
         }
