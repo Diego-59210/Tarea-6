@@ -21,6 +21,7 @@ public class HealthUI : MonoBehaviour
     }
     public void RegainHealth()
     {
-
+        alphaColor.a -= .1f;
+        bloodScreen.color = alphaColor;
     }
 }

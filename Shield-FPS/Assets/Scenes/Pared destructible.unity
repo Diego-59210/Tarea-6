@@ -228,6 +228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy 1 - Parent
       objectReference: {fileID: 0}
+    - target: {fileID: 5986745264177969488, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5986745264177969489, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -326,7 +330,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: f95d32cf6da68af4eb76f57107150550, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -378,6 +382,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7867410377396989094, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867410377396989094, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867410377396989094, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867410377396989095, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7867410377966098819, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
       propertyPath: m_Name
       value: Player-Parent v2.0
@@ -396,7 +416,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7867410377966098844, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.95
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7867410377966098844, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
       propertyPath: m_LocalRotation.w

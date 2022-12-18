@@ -28,6 +28,7 @@ public class HealthScript : MonoBehaviour
         }
         
     }
+
     public void ApplyDamage(float damage)
     {
         if (characterDied)
@@ -39,6 +40,8 @@ public class HealthScript : MonoBehaviour
         {
             //animationScript.PlayerHurt();
             healthUI.DisplayHealth(health);
+            
+            
         }
         if (isWall)
         {
@@ -69,15 +72,5 @@ public class HealthScript : MonoBehaviour
             animationScript.EnemyHit();
         }
         
-    }
-    public void HealthRegen()
-    {
-        if(isPlayer)
-        {
-            if(health<100f)
-            {
-
-            }
-        }
     }
 }

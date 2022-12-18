@@ -10,15 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 56901098}
   - component: {fileID: 56901101}
-  - component: {fileID: 56901100}
-  - component: {fileID: 56901099}
   m_Layer: 0
   m_Name: Linterna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &56901098
 Transform:
   m_ObjectHideFlags: 0
@@ -47,7 +45,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.7818134, b: 0.4009434, a: 1}
   m_Intensity: 18.76
-  m_Range: 0.57
+  m_Range: 8
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -58,7 +56,7 @@ Light:
     m_Strength: 1
     m_Bias: 0
     m_NormalBias: 0
-    m_NearPlane: 0.0946
+    m_NearPlane: 0.099999994
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -96,38 +94,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &56901100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56901097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 270883747aae9e045b0cc2408071d646, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &56901099
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 56901097}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4ba88416681bd9b4c9ad03023df8343e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7867410377396989095
 GameObject:
   m_ObjectHideFlags: 0
@@ -145,7 +111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7867410377396989094
 Transform:
   m_ObjectHideFlags: 0
@@ -154,7 +120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7867410377396989095}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -77.51, y: -7.06, z: 12.96}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -225,6 +191,8 @@ GameObject:
   - component: {fileID: 7867410377966098847}
   - component: {fileID: 7867410377966098841}
   - component: {fileID: 7867410377966098843}
+  - component: {fileID: 2411176861927514389}
+  - component: {fileID: 2011620529}
   m_Layer: 3
   m_Name: Player-Parent v2.0
   m_TagString: Player
@@ -325,6 +293,35 @@ MonoBehaviour:
   isPlayer: 1
   isEnemy: 0
   isWall: 0
+--- !u!114 &2411176861927514389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867410377966098819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 270883747aae9e045b0cc2408071d646, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightSource: {fileID: 56901097}
+  lightSound: {fileID: 0}
+  isOn: 0
+  failsafe: 0
+--- !u!114 &2011620529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867410377966098819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76f8dca12fb23a42ac3555122ee6625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodScreen: {fileID: 0}
 --- !u!1 &7867410378547798707
 GameObject:
   m_ObjectHideFlags: 0

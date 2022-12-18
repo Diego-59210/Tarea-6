@@ -4,29 +4,40 @@ using UnityEngine;
 
 public class LinternaScript : MonoBehaviour
 {
-    Animator anim;
-    Transform tr;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-        tr = transform;
-        tr = GetComponent<Transform>();
-    }
+    public GameObject lightSource;
+    public AudioSource lightSound;
+    public bool isOn = false;
+    public bool failsafe = false;
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            anim.SetBool("Linterna", true);
+            if(isOn == false && failsafe == false)
+            {
+                failsafe = true;
+                lightSource.SetActive(true);
+                //lightSound.Play();
+                isOn = true;
+                StartCoroutine(Failsafe());
+            }
+            if (isOn == true && failsafe == false)
+            {
+                failsafe = true;
+                lightSource.SetActive(false);
+                //lightSound.Play();
+                isOn = false;
+                StartCoroutine(Failsafe());
+            }
         }
 
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            anim.SetBool("Linterna", false);
-        }
+
+    }
+    IEnumerator Failsafe()
+    {
+        yield return new WaitForSeconds(0.25f);
+        failsafe = false;
     }
 
 }
