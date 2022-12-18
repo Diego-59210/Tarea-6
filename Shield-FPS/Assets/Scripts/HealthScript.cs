@@ -20,7 +20,7 @@ public class HealthScript : MonoBehaviour
        
         if (isPlayer)
         {
-            //healthUI = GetComponent<HealthUI>();
+            healthUI = GetComponent<HealthUI>();
         }
         if(isEnemy)
         {
@@ -69,5 +69,15 @@ public class HealthScript : MonoBehaviour
             animationScript.EnemyHit();
         }
         
-    }  
+    }
+    public void HealthRegen()
+    {
+        if(isPlayer)
+        {
+            if(health<100f)
+            {
+
+            }
+        }
+    }
 }
