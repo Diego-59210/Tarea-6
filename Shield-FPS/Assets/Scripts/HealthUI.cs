@@ -16,13 +16,11 @@ public class HealthUI : MonoBehaviour
 
     public void DisplayHealth(float value)
     {
-        value /= 100f;
-
-        if (value < 0f)
-        {
-            value = 0f;
-        }
-        alphaColor.a += .25f;
+        alphaColor.a += .1f;
         bloodScreen.color = alphaColor;
+    }
+    public void RegainHealth()
+    {
+
     }
 }
