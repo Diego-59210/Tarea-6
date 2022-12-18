@@ -23,9 +23,9 @@ public class LinternaScript : MonoBehaviour
             anim.SetBool("Linterna", true);
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyUp(KeyCode.F))
         {
-            anim.SetBool("Linterna", true);
+            anim.SetBool("Linterna", false);
         }
     }
 
