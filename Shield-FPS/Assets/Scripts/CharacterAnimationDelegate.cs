@@ -62,12 +62,12 @@ public class CharacterAnimationDelegate : MonoBehaviour
     }
     void CharacterDeath()
     {
-        Invoke("DeactivateGameObject", 1f);
+        Invoke("DeactivateGameObject", 2f);
     }
     void DeactivateGameObject()
     {
         collider = GetComponentInParent<CapsuleCollider>();
-        collider.enabled=false;
+        collider.enabled=false; 
         gameObject.SetActive(false);
     }
 }
