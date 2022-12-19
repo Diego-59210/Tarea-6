@@ -1,6 +1,6 @@
 // Unity built-in shader source. Copyright (c) 2016 Unity Technologies. MIT license (see license.txt)
 
-Shader "Hidden/TextCore/Sprite"
+Shader "Other/SpriteIgnore3D"
 {
     Properties
     {
@@ -24,6 +24,7 @@ Shader "Hidden/TextCore/Sprite"
     {
         Tags
         {
+
             "Queue"="Transparent"
             "IgnoreProjector"="True"
             "RenderType"="Transparent"
@@ -40,12 +41,12 @@ Shader "Hidden/TextCore/Sprite"
             WriteMask [_StencilWriteMask]
         }
 
-        Cull [_CullMode]
+        Cull Off
         Lighting Off
         ZWrite Off
-        ZTest [unity_GUIZTestMode]
-        Blend SrcAlpha OneMinusSrcAlpha
-        ColorMask [_ColorMask]
+        ZTest Always
+        Blend  One OneMinusSrcAlpha
+
 
         Pass
         {
