@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56901097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.11400757, y: 0.25119105, z: 0.7790005}
+  m_LocalPosition: {x: -6.32, y: 0.25119105, z: 5.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,10 +44,10 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.7818134, b: 0.4009434, a: 1}
-  m_Intensity: 18.76
-  m_Range: 8
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
+  m_Intensity: 8.6
+  m_Range: 16.06
+  m_SpotAngle: 103
+  m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -56,7 +56,7 @@ Light:
     m_Strength: 1
     m_Bias: 0
     m_NormalBias: 0
-    m_NearPlane: 0.099999994
+    m_NearPlane: 0.1
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -817,7 +817,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 23a373ac2b36c3d43aac7f036a47666f, type: 2}
+  - {fileID: 2100000, guid: 0ef6668cecad0084d9ff8bc76bbe63d5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -897,7 +897,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   radius: 1.6
-  damage: 5
+  damage: 10
 --- !u!1 &7867410379138732252
 GameObject:
   m_ObjectHideFlags: 0
