@@ -67,7 +67,7 @@ public class CharacterAnimationDelegate : MonoBehaviour
     void DeactivateGameObject()
     {
         collider = GetComponentInParent<CapsuleCollider>();
-        collider.enabled=false; 
+        collider.enabled = false; 
         gameObject.SetActive(false);
     }
 }
