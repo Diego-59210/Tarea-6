@@ -18,7 +18,7 @@ public class EnemyAttack : MonoBehaviour
         Collider[] hit = Physics.OverlapSphere(transform.position, radius, collisionLayer);
         if (hit.Length > 0)
         {           
-            hit[0].GetComponent<HealthScript>().ApplyDamage(damage);                         
+            hit[0].GetComponent<PlayerHealth>().ApplyDamage(damage);                         
             gameObject.SetActive(false);
         }
     }
