@@ -598,11 +598,10 @@ GameObject:
   - component: {fileID: 7867410377966098818}
   - component: {fileID: 7867410377966098847}
   - component: {fileID: 7867410377966098841}
-  - component: {fileID: 7867410377966098843}
   - component: {fileID: 2411176861927514389}
-  - component: {fileID: 2011620529}
   - component: {fileID: 126141544}
   - component: {fileID: 126141545}
+  - component: {fileID: 1761115233}
   m_Layer: 3
   m_Name: Player-Parent v2.0
   m_TagString: Player
@@ -688,22 +687,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   default_Combo_Timer: 0.4
   blockingPoint: {fileID: 7867410379183379577}
---- !u!114 &7867410377966098843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7867410377966098819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 481b68b576b7974478908a76a2603b49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  isPlayer: 1
-  isEnemy: 0
-  isWall: 0
 --- !u!114 &2411176861927514389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,19 +703,6 @@ MonoBehaviour:
   lightSound: {fileID: 0}
   isOn: 0
   failsafe: 0
---- !u!114 &2011620529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7867410377966098819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e76f8dca12fb23a42ac3555122ee6625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bloodScreen: {fileID: 0}
 --- !u!95 &126141544
 Animator:
   serializedVersion: 4
@@ -765,6 +735,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff5b4c4ced4f1f14f82deb2d80a8646a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1761115233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867410377966098819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a624eebc7ff15249a6d1a7cf37f4d92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  maxHealth: 100
+  healthRegenRate: 3
+  bloodyScreen: {fileID: 0}
 --- !u!1 &7867410378547798707
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,7 +913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7867410379138732252}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7549999, z: 0}
+  m_LocalPosition: {x: 0, y: 0.755, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

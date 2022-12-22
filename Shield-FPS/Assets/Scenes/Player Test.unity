@@ -799,21 +799,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1183188121, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
-      propertyPath: damage
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5791613841075965981, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5986745264177969488, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
       propertyPath: m_Name
       value: Enemy 1 - Parent
-      objectReference: {fileID: 0}
-    - target: {fileID: 5986745264177969488, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5986745264177969489, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
       propertyPath: m_RootOrder
@@ -859,14 +847,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7305968420509759235, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7305968420509759235, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b673f5b6994187048bc41d92f9d2bc90, type: 3}
 --- !u!1001 &1761115231
@@ -876,14 +856,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 683752910, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1414726730, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 1761115233, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
+      propertyPath: bloodyScreen
+      value: 
+      objectReference: {fileID: 1915588603}
     - target: {fileID: 7867410377966098819, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
       propertyPath: m_Name
       value: Player-Parent v2.0
@@ -932,36 +908,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7867410379138732249, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.755
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7867410377966098843, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
-    - {fileID: 2011620529, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
---- !u!1 &1761115232 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7867410377966098819, guid: 88cd013b14e77014f838a5d072121edf, type: 3}
-  m_PrefabInstance: {fileID: 1761115231}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1761115233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761115232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a624eebc7ff15249a6d1a7cf37f4d92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 100
-  maxHealth: 100
-  healthRegenRate: 5
-  healthRegenDelay: 5
-  bloodyScreen: {fileID: 1915588603}
 --- !u!1 &1915588601
 GameObject:
   m_ObjectHideFlags: 0

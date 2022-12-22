@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public LayerMask collisionLayer;
+    public LayerMask collisionLayer1;
+    public LayerMask collisionLayer2;
     public float radius = 1f;
     public float damage = 2f;
 
@@ -15,10 +16,16 @@ public class EnemyAttack : MonoBehaviour
     }
     void DetectCollision()
     {
-        Collider[] hit = Physics.OverlapSphere(transform.position, radius, collisionLayer);
-        if (hit.Length > 0)
-        {           
-            hit[0].GetComponent<PlayerHealth>().ApplyDamage(damage);                         
+        Collider[] hitShield = Physics.OverlapSphere(transform.position, radius, collisionLayer1);
+        if (hitShield.Length > 0)
+        {
+            hitShield[0].GetComponentInParent<CharacterAnimation>().BlockedAttack();
+            gameObject.SetActive(false);
+        }
+        Collider[] hitPlayer = Physics.OverlapSphere(transform.position, radius, collisionLayer2);
+        if (hitPlayer.Length > 0)
+        {
+            hitPlayer[0].GetComponent<PlayerHealth>().ApplyDamage(damage);                         
             gameObject.SetActive(false);
         }
     }
