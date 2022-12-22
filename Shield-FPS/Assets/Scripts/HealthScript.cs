@@ -12,7 +12,7 @@ public class HealthScript : MonoBehaviour
 
     public bool isPlayer, isEnemy, isWall;
 
-    private HealthUI healthUI;
+    private HealthManager healthUI;
 
     void Awake()
     {
@@ -20,7 +20,7 @@ public class HealthScript : MonoBehaviour
        
         if (isPlayer)
         {
-            healthUI = GetComponent<HealthUI>();
+            healthUI = GetComponentInChildren<HealthManager>();
         }
         if(isEnemy)
         {
@@ -39,7 +39,7 @@ public class HealthScript : MonoBehaviour
         if(isPlayer)
         {
             //animationScript.PlayerHurt();
-            healthUI.DisplayHealth(health);
+            healthUI.DisplayDamage();
             
             
         }
