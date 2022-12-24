@@ -44,6 +44,28 @@ MonoBehaviour:
   opacity:
     overrideState: 0
     value: 1
+--- !u!114 &-3078916354731910121
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  shutterAngle:
+    overrideState: 1
+    value: 360
+  sampleCount:
+    overrideState: 1
+    value: 32
 --- !u!114 &-2471124876614255934
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -95,7 +117,7 @@ MonoBehaviour:
     overrideState: 1
     value: 1.7
   color:
-    overrideState: 1
+    overrideState: 0
     value: {r: 0, g: 0, b: 0, a: 1}
   ambientOnly:
     overrideState: 0
@@ -140,6 +162,7 @@ MonoBehaviour:
   - {fileID: -121942525186954074}
   - {fileID: 628496533825910519}
   - {fileID: -2471124876614255934}
+  - {fileID: -3078916354731910121}
 --- !u!114 &159843389446831923
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -214,7 +237,7 @@ MonoBehaviour:
     value: 0
   contrast:
     overrideState: 1
-    value: 19
+    value: 0
   mixerRedOutRedIn:
     overrideState: 1
     value: 100
@@ -1473,7 +1496,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.425
+    value: 0
   fastMode:
     overrideState: 1
     value: 0
@@ -1516,7 +1539,7 @@ MonoBehaviour:
     value: {r: 1, g: 1, b: 1, a: 1}
   fastMode:
     overrideState: 1
-    value: 0
+    value: 1
   dirtTexture:
     overrideState: 1
     value: {fileID: 0}

@@ -7,6 +7,9 @@ TagManager:
   - Apisonadora
   - Enemy
   - Shield
+  - Llave 2
+  - Llave 1
+  - Activador
   layers:
   - Default
   - TransparentFX
