@@ -8,7 +8,7 @@ public class EnemyAttack : MonoBehaviour
     public LayerMask collisionLayer2;
     public float radius = 1f;
     public float damage = 2f;
-
+    public float energyAmount = 2f;
 
     void Update()
     {
@@ -20,6 +20,7 @@ public class EnemyAttack : MonoBehaviour
         if (hitShield.Length > 0)
         {
             hitShield[0].GetComponentInParent<CharacterAnimation>().BlockedAttack();
+            hitShield[0].GetComponentInParent<SpecialAttack>().AbsorbPower(energyAmount);
             gameObject.SetActive(false);
         }
         Collider[] hitPlayer = Physics.OverlapSphere(transform.position, radius, collisionLayer2);

@@ -13,6 +13,7 @@ public class EnemyMovement : MonoBehaviour
 
     public float attackDistance = 1f;
     public float chasePlayerAfterAttack = 0.5f;
+    public float knockbackForce = 2f;
 
     private float currentAttackTime;
     private float defaultAttackTime = 1f;
@@ -85,5 +86,11 @@ public class EnemyMovement : MonoBehaviour
             attackPlayer = false;
             followPlayer = true;
         }
+    }
+    public void ApplyKnockback()
+    {
+        followPlayer = false;
+        enemyBody.AddForce(-transform.forward * knockbackForce, ForceMode.Impulse);
+        followPlayer = true;
     }
 }

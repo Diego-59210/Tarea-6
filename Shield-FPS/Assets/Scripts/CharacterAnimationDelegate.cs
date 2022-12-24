@@ -9,7 +9,7 @@ public class CharacterAnimationDelegate : MonoBehaviour
     private CharacterAnimation animationScript;
 
     private AudioSource audioSource;
-    private Collider collider;
+    private Collider enemyCollider;
 
     [SerializeField]
     private AudioClip attackSound, deathSound;
@@ -66,8 +66,8 @@ public class CharacterAnimationDelegate : MonoBehaviour
     }
     void DeactivateGameObject()
     {
-        collider = GetComponentInParent<CapsuleCollider>();
-        collider.enabled = false; 
+        enemyCollider = GetComponentInParent<CapsuleCollider>();
+        enemyCollider.enabled = false; 
         gameObject.SetActive(false);
     }
 }

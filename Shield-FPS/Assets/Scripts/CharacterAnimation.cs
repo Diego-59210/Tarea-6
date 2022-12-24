@@ -34,6 +34,10 @@ public class CharacterAnimation : MonoBehaviour
     {
         anim.SetTrigger("Blocked");
     }
+    public void SpecialAttack()
+    {
+        anim.SetTrigger("Special");
+    }
 
     public void Death()
     {

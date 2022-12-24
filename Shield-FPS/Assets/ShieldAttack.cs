@@ -7,8 +7,7 @@ public class ShieldAttack : MonoBehaviour
     public LayerMask collisionLayer;
     public float radius = 1f;
     public float damage = 2f;
-
-
+   
     void Update()
     {
         DetectCollision();
@@ -19,6 +18,8 @@ public class ShieldAttack : MonoBehaviour
         if (hit.Length > 0)
         {
             hit[0].GetComponent<HealthScript>().ApplyDamage(damage);
+            hit[0].GetComponent<EnemyMovement>().ApplyKnockback();
+
             gameObject.SetActive(false);
         }
     }

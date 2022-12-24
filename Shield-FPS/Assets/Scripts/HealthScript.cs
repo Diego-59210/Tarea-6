@@ -6,7 +6,7 @@ public class HealthScript : MonoBehaviour
 {
     public float health = 100f;
     private CharacterAnimation animationScript;
-    private EnemyAI enemyScript;
+    private EnemyMovement enemyScript;
 
     private bool characterDied;
 
@@ -20,7 +20,7 @@ public class HealthScript : MonoBehaviour
         
         if(isEnemy)
         {
-            enemyScript = GetComponent<EnemyAI>();
+            enemyScript = GetComponent<EnemyMovement>();
         }
         
     }
@@ -36,6 +36,10 @@ public class HealthScript : MonoBehaviour
         {
             Debug.Log("Wall Hit");
         }
+        if (isEnemy)
+        {
+            animationScript.EnemyHit();
+        }
 
         if (health <= 0f)
         {
@@ -45,15 +49,12 @@ public class HealthScript : MonoBehaviour
             if(isEnemy)
             {
                 enemyScript.enabled = false;
-                transform.gameObject.layer = 0;
+                
             }
+            return;
             
         }
-        
-        if (isEnemy)
-        {
-            animationScript.EnemyHit();
-        }
+ 
         
     }
 }
