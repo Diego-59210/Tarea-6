@@ -94,6 +94,37 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &464146229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464146230}
+  m_Layer: 5
+  m_Name: ShootingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &464146230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464146229}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.1, y: 0.84, z: 3.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7867410379259905812}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407378473
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,6 +633,7 @@ GameObject:
   - component: {fileID: 126141544}
   - component: {fileID: 126141545}
   - component: {fileID: 1761115233}
+  - component: {fileID: 1136064577}
   m_Layer: 3
   m_Name: Player-Parent v2.0
   m_TagString: Player
@@ -751,6 +783,22 @@ MonoBehaviour:
   maxHealth: 100
   healthRegenRate: 3
   bloodyScreen: {fileID: 0}
+--- !u!114 &1136064577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7867410377966098819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93171756911ad2240bc6b7a3630a408e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  specialSlider: {fileID: 0}
+  maxEnergy: 10
+  energy: 0
+  minEnergy: 0
 --- !u!1 &7867410378547798707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1216,7 @@ Transform:
   - {fileID: 7867410378892395857}
   - {fileID: 7867410379183379576}
   - {fileID: 56901098}
+  - {fileID: 464146230}
   m_Father: {fileID: 7867410379138732249}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1216,8 +1265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackPoint: {fileID: 7867410378892395862}
-  attackSound: {fileID: 0}
-  deathSound: {fileID: 0}
+  proyectilePrefab: {fileID: 509997146843076737, guid: 54b527ad72d43c1418fd79cc06e4e85b, type: 3}
+  shootingPoint: {fileID: 464146230}
 --- !u!82 &1889320643
 AudioSource:
   m_ObjectHideFlags: 0

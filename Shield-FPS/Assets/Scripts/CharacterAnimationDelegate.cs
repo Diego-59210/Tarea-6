@@ -5,28 +5,23 @@ using UnityEngine;
 public class CharacterAnimationDelegate : MonoBehaviour
 {
     public GameObject AttackPoint;
-
-    private CharacterAnimation animationScript;
-
-    private AudioSource audioSource;
     private Collider enemyCollider;
-
-    [SerializeField]
-    private AudioClip attackSound, deathSound;
-
+    public GameObject proyectilePrefab;
+    public Transform shootingPoint;
 
     private EnemyMovement enemyMovementScript;
 
     void Awake()
     {
-        animationScript = GetComponent<CharacterAnimation>();
-        audioSource = GetComponent<AudioSource>();
         if (gameObject.CompareTag("Enemy"))
         {
             enemyMovementScript = GetComponentInParent<EnemyMovement>();
         }
     }
-
+    void SpecialAttackProyectile()
+    {
+        Instantiate(proyectilePrefab, shootingPoint.position, shootingPoint.rotation);
+    }
     void AttackON()
     {
         AttackPoint.SetActive(true);
@@ -38,18 +33,7 @@ public class CharacterAnimationDelegate : MonoBehaviour
             AttackPoint.SetActive(false);
         }
     }
-    public void AttackFXSound()
-    {
-        audioSource.volume = 0.2f;
-        audioSource.clip = attackSound;
-        audioSource.Play();
-    }
-    void CharacterDied()
-    {
-        audioSource.volume = 1f;
-        audioSource.clip = deathSound;
-        audioSource.Play();
-    }
+    
     void DisableMovement()
     {
         enemyMovementScript.enabled = false;
