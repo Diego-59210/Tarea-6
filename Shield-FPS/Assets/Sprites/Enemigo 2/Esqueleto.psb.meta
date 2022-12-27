@@ -104,16 +104,16 @@ ScriptedImporter:
       height: 210
     spriteID: a29d1e4f1b15efb4cb0f929f175a6a4b
     spriteBone:
-    - name: bone_15
+    - name: Dedo atacante 2
       guid: 5d35005c75f9ac04e946859aa4f2fa78
-      position: {x: 88.91057, y: -3.1058304, z: 0}
-      rotation: {x: 0, y: 0, z: 0.011338763, w: 0.99993575}
-      length: 82.69112
+      position: {x: 88.91054, y: -3.1058326, z: 0}
+      rotation: {x: 0, y: 0, z: 0.011338763, w: 0.9999357}
+      length: 82.69113
       parentId: 1
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_13
+    - name: Palma atacante
       guid: d4ffb713c53d8434f90e0f69d4b74964
       position: {x: 51.414036, y: 11.9409275, z: 0}
       rotation: {x: 0, y: 0, z: 0.9845085, w: 0.17533705}
@@ -122,7 +122,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: bone_12
+    - name: Dedito derecho
       guid: 83092d13801c7e54dbb4d5b4f40d90dc
       position: {x: 52.29333, y: 40.429928, z: 0}
       rotation: {x: 0, y: 0, z: 0.49649668, w: 0.86803865}
@@ -131,7 +131,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4286578943
-    - name: bone_17
+    - name: Dedo atacante 4
       guid: 90828ea28dd5bf34f8a3b2a88cff1b94
       position: {x: 32.469536, y: -48.794956, z: 0}
       rotation: {x: 0, y: 0, z: -0.6095877, w: 0.7927187}
@@ -140,7 +140,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294902015
-    - name: bone_14
+    - name: Dedo atacante 1
       guid: 05642ad7db6915f4db1e0d8cd789a8f0
       position: {x: 77.442955, y: 36.792786, z: 0}
       rotation: {x: 0, y: 0, z: 0.16221902, w: 0.9867548}
@@ -149,7 +149,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_11
+    - name: 'Mano derecha '
       guid: a637eed79b5dc5844a63df540b3d74dc
       position: {x: 40.236145, y: 64.95819, z: 0}
       rotation: {x: 0, y: 0, z: 0.60124594, w: -0.799064}
@@ -158,7 +158,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294901888
-    - name: bone_16
+    - name: Dedo atacante 3
       guid: 787dd8219026c7f4fb1f9d9e6c4c0da0
       position: {x: 81.04738, y: -32.17808, z: 0}
       rotation: {x: 0, y: 0, z: -0.19817375, w: 0.9801669}
@@ -985,7 +985,7 @@ ScriptedImporter:
       height: 210
     spriteID: 8bb610a0815dac94f99cb38f18a547fb
     spriteBone:
-    - name: bone_7
+    - name: 'Mano izquierda '
       guid: bb24f49cc7e1d594e8988e387f3ef5de
       position: {x: 148.50732, y: 177.8966, z: 0}
       rotation: {x: 0, y: 0, z: -0.7818857, w: 0.62342185}
@@ -994,7 +994,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278223103
-    - name: bone_8
+    - name: Dedito izquierdo
       guid: c68d7dbd803a66640aee4ec2fec23bba
       position: {x: 40.89176, y: -34.249184, z: 0}
       rotation: {x: 0, y: 0, z: -0.52234614, w: 0.8527336}
@@ -1684,7 +1684,7 @@ ScriptedImporter:
       height: 210
     spriteID: 30cb085429486194f800edf4aba3adb6
     spriteBone:
-    - name: bone_11
+    - name: 'Mano derecha '
       guid: a637eed79b5dc5844a63df540b3d74dc
       position: {x: 30.236145, y: 184.95819, z: 0}
       rotation: {x: 0, y: 0, z: 0.60124594, w: -0.799064}
@@ -1693,7 +1693,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294901888
-    - name: bone_12
+    - name: Dedito derecho
       guid: 83092d13801c7e54dbb4d5b4f40d90dc
       position: {x: 52.29338, y: 40.429913, z: 0}
       rotation: {x: 0, y: 0, z: 0.49649665, w: 0.8680386}
@@ -1702,7 +1702,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4286578943
-    - name: bone_13
+    - name: Palma atacante
       guid: d4ffb713c53d8434f90e0f69d4b74964
       position: {x: 51.414085, y: 11.940912, z: 0}
       rotation: {x: 0, y: 0, z: 0.98450845, w: 0.17533705}
@@ -2291,7 +2291,7 @@ ScriptedImporter:
       height: 300
     spriteID: 57e61e74ed4769546a5d22a0466551de
     spriteBone:
-    - name: bone_9
+    - name: Brazo derecho
       guid: 7577dd6ad193e084ca8eb78b16e7422c
       position: {x: 126.58203, y: 262.0598, z: 0}
       rotation: {x: 0, y: 0, z: 0.8115269, w: -0.5843152}
@@ -2671,7 +2671,7 @@ ScriptedImporter:
       height: 280
     spriteID: 0d8fb73b62ad05444a85769c51ba515a
     spriteBone:
-    - name: bone_10
+    - name: Brazo derecho 2
       guid: eb647757d63ced64e80ec1ee857f2ef1
       position: {x: 64.52185, y: 259.50305, z: 0}
       rotation: {x: 0, y: 0, z: 0.73209083, w: -0.6812071}
@@ -2680,7 +2680,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294934528
-    - name: bone_15
+    - name: Dedo atacante 2
       guid: 5d35005c75f9ac04e946859aa4f2fa78
       position: {x: 75.42963, y: 17.322266, z: 0}
       rotation: {x: 0, y: 0, z: -0.68952125, w: -0.7242656}
@@ -2689,7 +2689,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_14
+    - name: Dedo atacante 1
       guid: 05642ad7db6915f4db1e0d8cd789a8f0
       position: {x: 34.810974, y: 8.747314, z: 0}
       rotation: {x: 0, y: 0, z: -0.7909914, w: -0.6118272}
@@ -3077,7 +3077,7 @@ ScriptedImporter:
       height: 280
     spriteID: ae14e78412094644dba4022b1ca2589b
     spriteBone:
-    - name: bone_6
+    - name: Brazo izquierdo 2
       guid: a2719c9f22967ab4a95759a6a120cd02
       position: {x: 39.200195, y: 258.77026, z: 0}
       rotation: {x: 0, y: 0, z: -0.6707815, w: 0.7416551}
@@ -3437,7 +3437,7 @@ ScriptedImporter:
       height: 300
     spriteID: 887ada4c25da0ef43a7a072463e03abb
     spriteBone:
-    - name: bone_5
+    - name: Brazo izquierdo
       guid: d69c4636ab01dcf40a31b04252e61527
       position: {x: 42.74414, y: 263.52515, z: 0}
       rotation: {x: 0, y: 0, z: -0.5805603, w: 0.8142172}
@@ -3742,7 +3742,7 @@ ScriptedImporter:
       height: 180
     spriteID: 0c1a65b48a0ea2b4caa66aa3ef486c7e
     spriteBone:
-    - name: bone_23
+    - name: Pie izquierdo
       guid: 057df2f70a05a434dbdbfa936cdaef7a
       position: {x: 48.099854, y: 134.69577, z: 0}
       rotation: {x: 0, y: 0, z: -0.19483888, w: 0.9808353}
@@ -4246,7 +4246,7 @@ ScriptedImporter:
       height: 170
     spriteID: 1010d8ea9301d5c438776434f98fc11e
     spriteBone:
-    - name: bone_20
+    - name: Pie derecho
       guid: a66f720a37db2d748baab37b03bfb29e
       position: {x: 270.69977, y: 130.7915, z: 0}
       rotation: {x: 0, y: 0, z: 0.98486626, w: -0.1733164}
@@ -4661,7 +4661,7 @@ ScriptedImporter:
       height: 390
     spriteID: 51ef9d2cf86e09646a6c8eb8d086d194
     spriteBone:
-    - name: bone_22
+    - name: Pierna izquierda 2
       guid: 4e0e6bdf606858f41adfef11a613c240
       position: {x: 64.73279, y: 355.99988, z: 0}
       rotation: {x: 0, y: 0, z: -0.66743433, w: 0.7446688}
@@ -5098,7 +5098,7 @@ ScriptedImporter:
       height: 390
     spriteID: 087fb044bd736854cad4fcf4a8683002
     spriteBone:
-    - name: bone_19
+    - name: Pierna derecha 2
       guid: 4ecb7fb7e140e9643843b233cdf25797
       position: {x: 88.29028, y: 348.88818, z: 0}
       rotation: {x: 0, y: 0, z: 0.74595994, w: -0.6659908}
@@ -5521,7 +5521,7 @@ ScriptedImporter:
       height: 420
     spriteID: 9b789f08cc8834c4eae42ea49223f214
     spriteBone:
-    - name: bone_21
+    - name: Pierna izquierda
       guid: d8215652451d7e148a66624750c21976
       position: {x: 55.966675, y: 384.57556, z: 0}
       rotation: {x: 0, y: 0, z: -0.6813025, w: 0.7320021}
@@ -5936,7 +5936,7 @@ ScriptedImporter:
       height: 430
     spriteID: 936f89dd97218e646831f0901d9ca824
     spriteBone:
-    - name: bone_18
+    - name: 'Pierna derecha '
       guid: 1838e97a8f0aa9c4e85de9092e79931c
       position: {x: 86.040405, y: 386.60742, z: 0}
       rotation: {x: 0, y: 0, z: 0.73726904, w: -0.6755993}
@@ -6329,7 +6329,7 @@ ScriptedImporter:
       height: 360
     spriteID: 17f0246fd9d8ea547872f462300b38fe
     spriteBone:
-    - name: bone_4
+    - name: Cabeza
       guid: 73d4cc30e2a2b59429eb62174ea8fb53
       position: {x: 126.861206, y: 18.258423, z: 0}
       rotation: {x: 0, y: 0, z: 0.70467144, w: 0.7095339}
@@ -6766,7 +6766,7 @@ ScriptedImporter:
       height: 270
     spriteID: 5e18026a96514c34dbc6d7edf3074c6e
     spriteBone:
-    - name: bone_2
+    - name: Cadera
       guid: 29f8c0e74b9dd304ba0b5320f8eaf1e1
       position: {x: 129.05908, y: 134.74817, z: 0}
       rotation: {x: 0, y: 0, z: 0.7099508, w: 0.7042513}
@@ -7291,7 +7291,7 @@ ScriptedImporter:
       height: 520
     spriteID: 60199d11cc8241d46924498aa80afdd6
     spriteBone:
-    - name: bone_3
+    - name: Torso
       guid: 667ca58c108716440aa7e5434ac99cb5
       position: {x: 261.25708, y: 27.10559, z: 0}
       rotation: {x: 0, y: 0, z: 0.70596075, w: 0.70825106}
@@ -7300,7 +7300,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_5
+    - name: Brazo izquierdo
       guid: d69c4636ab01dcf40a31b04252e61527
       position: {x: 427.06985, y: -200.10487, z: 0}
       rotation: {x: 0, y: 0, z: -0.98598784, w: 0.16681743}
@@ -7309,7 +7309,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_9
+    - name: Brazo derecho
       guid: 7577dd6ad193e084ca8eb78b16e7422c
       position: {x: 424.25665, y: 216.05026, z: 0}
       rotation: {x: 0, y: 0, z: 0.98726827, w: 0.15906428}
@@ -7933,7 +7933,7 @@ ScriptedImporter:
     uvTransform: {x: -776, y: -1026}
   characterData:
     bones:
-    - name: bone_1
+    - name: Huesito mandarin
       guid: 8c9c2ca7808be744b87bd2ec894c75d2
       position: {x: 1036.483, y: 16.40217, z: 0}
       rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
@@ -7942,7 +7942,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278190335
-    - name: bone_2
+    - name: Cadera
       guid: 29f8c0e74b9dd304ba0b5320f8eaf1e1
       position: {x: 918.3459, y: -2.5761595, z: 0}
       rotation: {x: 0, y: 0, z: 0.0040301695, w: 0.9999919}
@@ -7951,7 +7951,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: bone_3
+    - name: Torso
       guid: 667ca58c108716440aa7e5434ac99cb5
       position: {x: 122.33572, y: -3.1841834, z: 0}
       rotation: {x: 0, y: 0, z: -0.0056496277, w: 0.999984}
@@ -7960,7 +7960,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_4
+    - name: Cabeza
       guid: 73d4cc30e2a2b59429eb62174ea8fb53
       position: {x: 501.13586, y: 6.019047, z: 0}
       rotation: {x: 0, y: 0, z: -0.0018188066, w: 0.99999833}
@@ -7969,7 +7969,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_5
+    - name: Brazo izquierdo
       guid: d69c4636ab01dcf40a31b04252e61527
       position: {x: 427.06982, y: -200.10483, z: 0}
       rotation: {x: 0, y: -0, z: -0.98598784, w: 0.16681741}
@@ -7978,7 +7978,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_6
+    - name: Brazo izquierdo 2
       guid: a2719c9f22967ab4a95759a6a120cd02
       position: {x: 287.93036, y: -7.8065977, z: 0}
       rotation: {x: 0, y: 0, z: -0.11558634, w: 0.99329746}
@@ -7987,7 +7987,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294902015
-    - name: bone_7
+    - name: 'Mano izquierda '
       guid: bb24f49cc7e1d594e8988e387f3ef5de
       position: {x: 292.34628, y: 0.042120475, z: 0}
       rotation: {x: 0, y: 0, z: -0.16170967, w: 0.9868384}
@@ -7996,7 +7996,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278223103
-    - name: bone_8
+    - name: Dedito izquierdo
       guid: c68d7dbd803a66640aee4ec2fec23bba
       position: {x: 40.89172, y: -34.24913, z: 0}
       rotation: {x: 0, y: 0, z: -0.5223461, w: 0.8527336}
@@ -8005,7 +8005,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255488
-    - name: bone_9
+    - name: Brazo derecho
       guid: 7577dd6ad193e084ca8eb78b16e7422c
       position: {x: 424.25662, y: 216.05023, z: 0}
       rotation: {x: 0, y: -0, z: 0.98726827, w: 0.1590643}
@@ -8014,7 +8014,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4286643968
-    - name: bone_10
+    - name: Brazo derecho 2
       guid: eb647757d63ced64e80ec1ee857f2ef1
       position: {x: 284.51144, y: 8.617972, z: 0}
       rotation: {x: 0, y: 0, z: 0.12504613, w: 0.99215096}
@@ -8023,7 +8023,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294934528
-    - name: bone_11
+    - name: 'Mano derecha '
       guid: a637eed79b5dc5844a63df540b3d74dc
       position: {x: 285.55447, y: -3.7601912, z: 0}
       rotation: {x: 0, y: 0, z: 0.17541441, w: 0.9844947}
@@ -8032,7 +8032,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294901888
-    - name: bone_12
+    - name: Dedito derecho
       guid: 83092d13801c7e54dbb4d5b4f40d90dc
       position: {x: 52.29337, y: 40.42987, z: 0}
       rotation: {x: 0, y: 0, z: 0.49649662, w: 0.8680387}
@@ -8041,7 +8041,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4286578943
-    - name: bone_13
+    - name: Palma atacante
       guid: d4ffb713c53d8434f90e0f69d4b74964
       position: {x: 51.41407, y: 11.940887, z: 0}
       rotation: {x: 0, y: -0, z: 0.98450845, w: 0.17533709}
@@ -8050,7 +8050,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255615
-    - name: bone_14
+    - name: Dedo atacante 1
       guid: 05642ad7db6915f4db1e0d8cd789a8f0
       position: {x: 77.442924, y: 36.79279, z: 0}
       rotation: {x: 0, y: 0, z: 0.16221902, w: 0.9867548}
@@ -8059,7 +8059,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255360
-    - name: bone_15
+    - name: Dedo atacante 2
       guid: 5d35005c75f9ac04e946859aa4f2fa78
       position: {x: 88.9105, y: -3.1058197, z: 0}
       rotation: {x: 0, y: 0, z: 0.011338749, w: 0.99993575}
@@ -8068,7 +8068,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294967040
-    - name: bone_16
+    - name: Dedo atacante 3
       guid: 787dd8219026c7f4fb1f9d9e6c4c0da0
       position: {x: 81.04735, y: -32.178032, z: 0}
       rotation: {x: 0, y: 0, z: -0.19817372, w: 0.9801669}
@@ -8077,7 +8077,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294901760
-    - name: bone_17
+    - name: Dedo atacante 4
       guid: 90828ea28dd5bf34f8a3b2a88cff1b94
       position: {x: 32.4695, y: -48.794918, z: 0}
       rotation: {x: 0, y: 0, z: -0.6095876, w: 0.7927187}
@@ -8086,7 +8086,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294902015
-    - name: bone_18
+    - name: 'Pierna derecha '
       guid: 1838e97a8f0aa9c4e85de9092e79931c
       position: {x: 22.850178, y: 122.838455, z: 0}
       rotation: {x: 0, y: -0, z: 0.9988649, w: 0.047633097}
@@ -8095,7 +8095,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278190335
-    - name: bone_19
+    - name: Pierna derecha 2
       guid: 4ecb7fb7e140e9643843b233cdf25797
       position: {x: 430.25305, y: -10.300855, z: 0}
       rotation: {x: 0, y: 0, z: -0.012955567, w: 0.9999161}
@@ -8104,7 +8104,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4278255488
-    - name: bone_20
+    - name: Pie derecho
       guid: a66f720a37db2d748baab37b03bfb29e
       position: {x: 389.85922, y: 6.4708056, z: 0}
       rotation: {x: 0, y: 0, z: -0.5266248, w: 0.85009784}
@@ -8113,7 +8113,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4286643968
-    - name: bone_21
+    - name: Pierna izquierda
       guid: d8215652451d7e148a66624750c21976
       position: {x: 18.803818, y: -127.06327, z: 0}
       rotation: {x: 0, y: -0, z: -0.9994936, w: 0.031822152}
@@ -8122,7 +8122,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294934528
-    - name: bone_22
+    - name: Pierna izquierda 2
       guid: 4e0e6bdf606858f41adfef11a613c240
       position: {x: 420.9939, y: 18.648094, z: 0}
       rotation: {x: 0, y: 0, z: 0.01878138, w: 0.99982363}
@@ -8131,7 +8131,7 @@ ScriptedImporter:
       color:
         serializedVersion: 2
         rgba: 4294901888
-    - name: bone_23
+    - name: Pie izquierdo
       guid: 057df2f70a05a434dbdbfa936cdaef7a
       position: {x: 401.45862, y: -20.539803, z: 0}
       rotation: {x: 0, y: 0, z: 0.50955266, w: 0.86043954}
