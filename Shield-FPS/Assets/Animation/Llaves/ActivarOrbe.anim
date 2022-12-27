@@ -2311,4 +2311,18 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: PlayFx
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 35694b806243e1340bdd682f69333431, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0
+    functionName: PlayFx
+    data: 
+    objectReferenceParameter: {fileID: 8300000, guid: 9bd10cd2dc33051478e0e3ee31e25595, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
