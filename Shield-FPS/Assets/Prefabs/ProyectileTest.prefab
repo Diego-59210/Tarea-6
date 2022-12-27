@@ -128,9 +128,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80794c53b067a5a43a9418e6e0198e67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 2.5
   damage: 5
-  energyAmount: 20
+  energyAmount: 1
   radius: 2
   collisionLayer1:
     serializedVersion: 2
@@ -150,6 +150,8 @@ GameObject:
   - component: {fileID: 2066934710882131301}
   - component: {fileID: 2916017605904752079}
   - component: {fileID: 5760980985134221337}
+  - component: {fileID: 6989354463612862285}
+  - component: {fileID: 8684004070510992244}
   m_Layer: 0
   m_Name: FireballSprite
   m_TagString: Untagged
@@ -212,7 +214,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_Sprite: {fileID: -1436885192, guid: 6f49b8d29e6efc341b3b2d452e81b02c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -256,3 +258,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4015f82018abceb48aaa0f3980329d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6989354463612862285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4117530426478861579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993c509d4478db44cb72dd62de8dfe83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!210 &8684004070510992244
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4117530426478861579}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
