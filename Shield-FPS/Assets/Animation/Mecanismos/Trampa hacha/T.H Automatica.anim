@@ -232,32 +232,4 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.33333334
-    functionName: PlayFx
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 9ec5b09ecead1e9409daa729f896d31c, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.5
-    functionName: PlayFx
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: eba4beb1b7ad7b94082fc24639208b1e, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 2.1666667
-    functionName: PlayFx
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: 5de9424111def0d43b25193f02bb3998, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 2.25
-    functionName: PlayFx
-    data: 
-    objectReferenceParameter: {fileID: 8300000, guid: e912bf2100442234c8a8a1254e1002bd, type: 3}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
